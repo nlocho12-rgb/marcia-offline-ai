@@ -4,8 +4,6 @@ workflows:
     max_build_duration: 60
     environment:
       flutter: stable
-      android_signing:
-        - none
     scripts:
       - name: Get Flutter packages
         script: |
