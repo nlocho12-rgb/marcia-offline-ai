@@ -1,0 +1,17 @@
+workflows:
+  android-workflow:
+    name: Marcia Android Build
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      android_signing:
+        - none
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter pub get
+      - name: Build Android APK
+        script: |
+          flutter build apk --release
+    artifacts:
+      - build/app/outputs/**/*.apk
