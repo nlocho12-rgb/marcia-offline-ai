@@ -53,5 +53,4 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
-    implementation "com.microsoft.onnxruntime:onnxruntime-android:1.18.0"
 }
